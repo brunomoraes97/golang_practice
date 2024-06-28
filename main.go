@@ -2,23 +2,14 @@ package main
 
 import "fmt"
 
-// função que será chamada
-func olaMundo() {
-	fmt.Println("Olá Mundo!")
-}
-
-func dois() {
-	fmt.Println("Dois")
-}
-
-func tres() {
-	fmt.Println("Tres")
-}
-
-// função principal
-// entrypoint -> A função que será chamada
 func main() {
-	olaMundo()
-	dois()
-	tres()
+
+	fmt.Println("Go " + "Lang")
+
+	fmt.Println("1 + 1 =", 1+1)
+	fmt.Println("7.0/3.0 =", 7.0/3.0)
+
+	fmt.Println(true && false) // false
+	fmt.Println(true || false) // true
+	fmt.Println(!true)         // false
 }

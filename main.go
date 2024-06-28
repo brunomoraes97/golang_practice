@@ -1,25 +1,21 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
+
+const s string = "constant"
 
 func main() {
+	fmt.Println(s)
 
-	var a = "initial" // Não precisa colocar o tipo
-	fmt.Println(a)
+	const n = 500000000
 
-	var b, c int = 1, 2 // Mas também dá para tipar
-	fmt.Println(b, c)
-
-	var d = true
+	const d = 3e20 / n
 	fmt.Println(d)
 
-	var e int
-	fmt.Println(e)
+	fmt.Println(int64(d))
 
-	var f string
-	fmt.Println(f)
-
-	g := "maçã"
-	fmt.Println(g)
-
+	fmt.Println(math.Sin(n))
 }

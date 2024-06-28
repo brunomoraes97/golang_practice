@@ -4,12 +4,22 @@ import "fmt"
 
 func main() {
 
-	fmt.Println("Go " + "Lang")
+	var a = "initial" // Não precisa colocar o tipo
+	fmt.Println(a)
 
-	fmt.Println("1 + 1 =", 1+1)
-	fmt.Println("7.0/3.0 =", 7.0/3.0)
+	var b, c int = 1, 2 // Mas também dá para tipar
+	fmt.Println(b, c)
 
-	fmt.Println(true && false) // false
-	fmt.Println(true || false) // true
-	fmt.Println(!true)         // false
+	var d = true
+	fmt.Println(d)
+
+	var e int
+	fmt.Println(e)
+
+	var f string
+	fmt.Println(f)
+
+	g := "maçã"
+	fmt.Println(g)
+
 }
